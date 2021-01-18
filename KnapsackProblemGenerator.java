@@ -3,6 +3,7 @@ import java.util.concurrent.ThreadLocalRandom;
 
 public class KnapsackProblemGenerator {
 	
+	//----- EDIT THESE TO CREATE SPECIFIC PROBLEMS ------
 	final int NUMBER_OF_PROBLEMS = 1; //How many files are made
 	final int MIN_ITEM_WEIGHT = 1; //The smallest weight an item can have
 	final int MAX_ITEM_WEIGHT = 5; //The greatest weight an item can have
