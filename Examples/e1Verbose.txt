@@ -1,0 +1,25 @@
+Solving file p2.txt
+
+Capacity = 7
+Item{Name=A,Value=2,Weight=2}
+Item{Name=B,Value=5,Weight=1}
+Item{Name=C,Value=1,Weight=1}
+Item{Name=D,Value=1,Weight=2}
+Item{Name=E,Value=3,Weight=2}
+Item{Name=F,Value=2,Weight=2}
+
+Solving via Dynamic Table
+0  0  0  0  0  0  0  0  
+0  0  2  2  2  2  2  2  
+0  5  5  7  7  7  7  7  
+0  5  6  7  8  8  8  8  
+0  5  6  7  8  8  9  9  
+0  5  6  8  9  10 11 11 
+0  5  6  8  9  10 11 12 
+
+BEST KNAPSACK: Knapsack(maxWeight=7,currentWeight=7,currentValue=12,Items=[Item{Name=F,Value=2,Weight=2},Item{Name=E,Value=3,Weight=2},Item{Name=B,Value=5,Weight=1},Item{Name=A,Value=2,Weight=2}])
+TIME TAKEN = 0s
+
+FILE OUTPUT:
+12
+A B E F 

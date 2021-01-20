@@ -1,0 +1,43 @@
+Solving file p5.txt
+
+Capacity = 30
+Item{Name=A,Value=3,Weight=2}
+Item{Name=B,Value=2,Weight=2}
+Item{Name=C,Value=4,Weight=4}
+Item{Name=D,Value=2,Weight=5}
+Item{Name=E,Value=5,Weight=1}
+Item{Name=F,Value=3,Weight=4}
+Item{Name=G,Value=4,Weight=2}
+Item{Name=H,Value=5,Weight=5}
+Item{Name=I,Value=4,Weight=2}
+Item{Name=J,Value=5,Weight=2}
+Item{Name=K,Value=5,Weight=2}
+Item{Name=L,Value=5,Weight=2}
+Item{Name=M,Value=4,Weight=4}
+Item{Name=N,Value=4,Weight=3}
+Item{Name=O,Value=2,Weight=1}
+
+Solving via Dynamic Table
+0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  
+0  0  3  3  3  3  3  3  3  3  3  3  3  3  3  3  3  3  3  3  3  3  3  3  3  3  3  3  3  3  3  
+0  0  3  3  5  5  5  5  5  5  5  5  5  5  5  5  5  5  5  5  5  5  5  5  5  5  5  5  5  5  5  
+0  0  3  3  5  5  7  7  9  9  9  9  9  9  9  9  9  9  9  9  9  9  9  9  9  9  9  9  9  9  9  
+0  0  3  3  5  5  7  7  9  9  9  9  9  11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 
+0  5  5  8  8  10 10 12 12 14 14 14 14 14 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 
+0  5  5  8  8  10 10 12 12 14 14 15 15 17 17 17 17 17 19 19 19 19 19 19 19 19 19 19 19 19 19 
+0  5  5  9  9  12 12 14 14 16 16 18 18 19 19 21 21 21 21 21 23 23 23 23 23 23 23 23 23 23 23 
+0  5  5  9  9  12 12 14 14 16 17 18 19 19 21 21 23 23 24 24 26 26 26 26 26 28 28 28 28 28 28 
+0  5  5  9  9  13 13 16 16 18 18 20 21 22 23 23 25 25 27 27 28 28 30 30 30 30 30 32 32 32 32 
+0  5  5  10 10 14 14 18 18 21 21 23 23 25 26 27 28 28 30 30 32 32 33 33 35 35 35 35 35 37 37 
+0  5  5  10 10 15 15 19 19 23 23 26 26 28 28 30 31 32 33 33 35 35 37 37 38 38 40 40 40 40 40 
+0  5  5  10 10 15 15 20 20 24 24 28 28 31 31 33 33 35 36 37 38 38 40 40 42 42 43 43 45 45 45 
+0  5  5  10 10 15 15 20 20 24 24 28 28 31 31 33 33 35 36 37 38 39 40 41 42 42 44 44 46 46 47 
+0  5  5  10 10 15 15 20 20 24 24 28 28 31 32 33 35 35 37 37 39 40 41 42 43 44 45 46 46 48 48 
+0  5  7  10 12 15 17 20 22 24 26 28 30 31 33 34 35 37 37 39 39 41 42 43 44 45 46 47 48 48 50 
+
+BEST KNAPSACK: Knapsack(maxWeight=30,currentWeight=30,currentValue=50,Items=[Item{Name=O,Value=2,Weight=1},Item{Name=N,Value=4,Weight=3},Item{Name=M,Value=4,Weight=4},Item{Name=L,Value=5,Weight=2},Item{Name=K,Value=5,Weight=2},Item{Name=J,Value=5,Weight=2},Item{Name=I,Value=4,Weight=2},Item{Name=H,Value=5,Weight=5},Item{Name=G,Value=4,Weight=2},Item{Name=E,Value=5,Weight=1},Item{Name=C,Value=4,Weight=4},Item{Name=A,Value=3,Weight=2}])
+TIME TAKEN = 0s
+
+FILE OUTPUT:
+50
+A C E G H I J K L M N O 
