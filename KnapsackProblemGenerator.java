@@ -49,8 +49,16 @@ public class KnapsackProblemGenerator {
 		String toReturn = "";
 		int numItems = (ThreadLocalRandom.current().nextInt(MIN_NUMBER_OF_ITEMS, MAX_NUMBER_OF_ITEMS + 1));
 		toReturn += Integer.toString(numItems)+"\n";
+		int charIndex = 0;	// charIndex increments starting at 0 once Z is reached as the first character of the generated item
+		
 		for(int i=0;i<numItems;i++) {
-			toReturn+=((char)(i+65))+" ";
+			
+			if (i + 65 > (64 + 26*(charIndex + 1))){
+				charIndex++;
+			}
+			
+			toReturn+=((char)(i+65 - 26*charIndex))+ Integer.toString(charIndex) + " ";
+			
 			toReturn+=Integer.toString(ThreadLocalRandom.current().nextInt(MIN_ITEM_VALUE, MAX_ITEM_VALUE + 1))+" ";
 			toReturn+=Integer.toString(ThreadLocalRandom.current().nextInt(MIN_ITEM_WEIGHT, MAX_ITEM_WEIGHT + 1))+"\n";
 		}
